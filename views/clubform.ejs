@@ -1,0 +1,51 @@
+<%- include('partials/header') %>
+<%- include('partials/navbar') %>
+
+<div class="content" >
+  <div class="heading">
+    <h4>Enter Club Details here!</h4>
+  </div>
+  
+  <div class="para" style="height: 95vh;">
+    
+    <div class="container mt-5" ></div>
+    
+      <div class="row"style="margin-left: 160px;">
+        <div class="col-sm-8">
+          <div class="card">
+            <div class="card-body">
+           
+                <form action="/clubdetails" method="POST" >
+        
+                    <div class="form-group">
+                        <label>Club Name*</label>
+                        <input type="text" class="form-control" name="clubname" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Logo*</label>
+                        <input type="text" class="form-control" name="image">
+                    </div>
+                    <div class="form-group">
+                        <label>Club Description*</label>
+                        <textarea name="description" cols="80" rows="5"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>Instagram*</label>
+                        <input type="text" class="form-control" name="instagram" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Website Link*</label>
+                        <input type="text" class="form-control" name="link" required>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Register</button>
+                </form>
+    
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+</div>
+
